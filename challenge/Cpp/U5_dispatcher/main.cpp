@@ -226,10 +226,9 @@ private:
     // delete unused constructors
     CommandDispatcher (const CommandDispatcher&) = delete;
     CommandDispatcher& operator= (const CommandDispatcher&) = delete;
-    /***********************************************************************************************/
-    /** Oba maju parameter ako konstantny, a teda vytvaraju konstantny objekt, konstantny objekt  **/
-    /** vsak nemoze menit svoje parametre. Preto ich vymazeme, aby sme takyto objekt nevytvorili  **/
-    /***********************************************************************************************/
+    /*****************************************************************************************************/
+    /** Oba sluzia na kopirovanie objektu, to nam vsak v tomto pripade nie je treba, preto ich vymazeme **/
+    /*****************************************************************************************************/
 };
 
 int main()
